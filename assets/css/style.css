@@ -67,47 +67,52 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Prelaoder */
-#preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 9999;
-  overflow: hidden;
-  background: #fff;
-}
-
-#preloader:before {
-  content: "";
-  position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
-  border: 6px solid #f2f2f2;
-  border-top: 6px solid #18d26e;
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid white;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  -webkit-animation: animate-preloader 1s linear infinite;
-  animation: animate-preloader 1s linear infinite;
+  border-top: 16px solid black;
+  border-right: 16px solid white;
+  border-bottom: 16px solid red;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
 }
 
-@-webkit-keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
 }
 
-@keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
 }
 
 /*--------------------------------------------------------------
@@ -118,6 +123,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 997;
   padding: 26px 0;
   background: rgba(0, 0, 0, 0.9);
+  display:none;
 }
 
 #header.header-transparent {
@@ -1371,7 +1377,10 @@ section {
   text-transform: uppercase;
   color: #999;
 }
-
+#main
+{
+  display:none;
+}
 #contact .contact-info a {
   color: #000;
 }
@@ -1502,6 +1511,7 @@ section {
   padding: 0 0 30px 0;
   color: #eee;
   font-size: 14px;
+  display:none;
 }
 
 #footer .footer-top {

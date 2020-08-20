@@ -36,7 +36,8 @@
   ======================================================== -->
 </head>
 
-<body>
+<body onload="myFunction()" style="margin:0;">
+<div id="loader"></div>
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top ">
@@ -50,7 +51,34 @@
 
           <nav class="nav-menu d-none d-lg-block">
             <ul>
-              <li><a href="index.html">Home</a></li>
+              <li class="active"><a href="index.html">Home</a></li>
+              <li class="drop-down"><a href="">Our Products</a>
+                <ul>
+                  <li><a href="Healthcare.html">Healthcare using AI</a></li>
+                  <li><a href="home-automation.html">Home Automation</a></li>
+                </ul>
+              </li>
+              <li class="drop-down"><a href="">Our Services</a>
+                <ul>
+                  <li><a href="Home-Decor.html">Home Decor</a></li>
+                  <li><a href="Interior-Design.html">Interior Designing</a></li>
+                  <li><a href="3D-Design.html">3D Designing</a></li>
+                </ul>
+              </li>
+              <li class="drop-down"><a href="">Join Us</a>
+                <ul>
+                  <li><a href="careers.html">Careers</a></li>
+                  <li><a href="ideas-incubation.html">Ideas Incubation</a></li>
+                </ul>
+              </li>
+              <li class="drop-down"><a href="">Coming Projects</a>
+                <ul>
+                  <li><a href="restaurant.html">Restaurant</a></li>
+                  <!-- <li><a href="ideas-incubation.html">Ideas Incubation</a></li> -->
+                </ul>
+              </li>
+              
+              <li><a href="family.html">Family</a></li>
             </ul>
           </nav><!-- .nav-menu -->
         </div>
@@ -162,7 +190,11 @@ Keeping the recent global scenario we have also kept COVID-19 Tracker as it has 
             </div>
 
           </div>
-
+          <div class="social-links" style="margin-left: 10px;">
+            <button type="submit" class="btn btn-danger" onclick="location.href='mailto:teconicopvtltd@gmail.com';">
+              <i class="icon-mail-fill"></i>Message Us
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -201,7 +233,22 @@ Keeping the recent global scenario we have also kept COVID-19 Tracker as it has 
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js"></script>
+   <script >
+    var myVar;
 
+    function myFunction() {
+      myVar = setTimeout(showPage, 1500);
+    }
+
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("header").style.display = "block";
+      document.getElementById("main").style.display = "block";
+      document.getElementById("footer").style.display = "block";
+
+    }
+  </script>
 </body>
 
 </html>
