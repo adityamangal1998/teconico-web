@@ -1375,10 +1375,7 @@ section {
   text-transform: uppercase;
   color: #999;
 }
-#main
-{
-  display:none;
-}
+
 #contact .contact-info a {
   color: #000;
 }

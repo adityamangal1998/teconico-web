@@ -33,9 +33,9 @@
   <link href="assets/veg/style.css" rel="stylesheet">
 
   </head>
-  <body class="goto-here" onload="myFunction()" style="margin:0;">
-	<div id="loader"></div>
-	<header id="head" style="display:none;">
+  <body class="goto-here" style="margin:0;">
+	
+	<header id="head" >
 		<div class="py-1 bg-primary">
     	<div class="container">
     		<div class="row no-gutters d-flex align-items-start align-items-center px-md-0">
@@ -47,7 +47,7 @@
 					    </div>
 					    <div class="col-md pr-4 d-flex topper align-items-center">
 					    	<div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
-						    <span class="text">shahimandi@gmail.com</span>
+						    <span class="text">shahimandiinfo@gmail.com</span>
 					    </div>
 					    <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right">
 						    <span class="text">Delivery in 24 hours with Amazing <b>Gifts</b></span>
@@ -84,7 +84,7 @@
 	  </nav>
     <!-- END nav -->
 </header>
-    <section id="intro" style="display:none;">
+    <section id="intro" >
     <div class="intro-container">
       <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
 
@@ -95,7 +95,7 @@
           <div class="carousel-item active" style="background-image: url('assets/veg/images/bg_1.jpg')">
             <div class="carousel-container">
               <div class="container">
-                <h2 class="animate__animated animate__fadeInDown">We serve Fresh Vegestables</h2>
+                <h2 class="animate__animated animate__fadeInDown">We serve Fresh Vegetables</h2>
                 <p class="animate__animated animate__fadeInUp">
                   We deliver organic vegetables
 
@@ -110,7 +110,7 @@
               <div class="container">
                 <h2 class="animate__animated animate__fadeInDown">Quality is Our First Priority</h2>
                 <p class="animate__animated animate__fadeInUp">
-                  100% Fresh &amp; Organic Vegestables
+                  100% Fresh &amp; Organic Vegetables
                 </p>
                 <a href="#veg-detail" class="btn-get-started scrollto animate__animated animate__fadeInUp">Get Started</a>
               </div>
@@ -133,7 +133,7 @@
     </div>
   </section><!-- End Intro Section -->
 
-    <section id="veg-detail" class="ftco-section" style="display:none;">
+    <section id="veg-detail" class="ftco-section" >
 			<div class="container">
 				<div class="row no-gutters ftco-services">
           <div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
@@ -185,7 +185,7 @@
 		</section>
 
 
-    <section id="veg-list" class="ftco-section" style="display:none;">
+    <section id="veg-list" class="ftco-section" >
     	<div class="container">
 				<div class="row justify-content-center mb-3 pb-3">
           <div class="col-md-12 heading-section text-center ftco-animate">
@@ -276,7 +276,7 @@
 		
 
 		
-    <footer id="foot" class="ftco-footer ftco-section" style="display:none;">
+    <footer id="foot" class="ftco-footer ftco-section" >
       <div class="container">
       	<div class="row">
       		<div class="mouse">
@@ -320,7 +320,7 @@
             
           </div>
           <div class="social-links" style="margin-left: 10px;">
-            <button type="submit" class="btn btn-primary" onclick="location.href='mailto:teconicopvtltd@gmail.com';">
+            <button type="submit" class="btn btn-primary" onclick="location.href='mailto:shahimandiinfo@gmail.com';">
               <i class="icon-mail-fill"></i>Message Us
             </button>
           </div>
@@ -359,21 +359,6 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="assets/veg/js/google-map.js"></script>
   <script src="assets/veg/js/main.js"></script>
-   <script >
-    var myVar;
-
-    function myFunction() {
-      myVar = setTimeout(showPage, 500);
-    }
-
-    function showPage() {
-      document.getElementById("loader").style.display = "none";
-      document.getElementById("head").style.display = "block";
-      document.getElementById("intro").style.display = "block";
-      document.getElementById("veg-detail").style.display = "block";
-      document.getElementById("veg-list").style.display = "block";
-      document.getElementById("foot").style.display = "block";
-    }
-  </script> 
+   
   </body>
 </html>

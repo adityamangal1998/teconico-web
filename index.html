@@ -37,10 +37,9 @@
   ======================================================== -->
 </head>
 
-<body onload="myFunction()" style="margin:0;">
-<div id="loader"></div>
+<body  style="margin:0;">
   <!-- ======= Header ======= -->
-  <header id="header" style="display:none;" class="fixed-top header-transparent">
+  <header id="header"  class="fixed-top header-transparent">
     <div class="container-fluid">
 
       <div class="row justify-content-center">
@@ -89,7 +88,7 @@
   </header><!-- End Header -->
 
   <!-- ======= Intro Section ======= -->
-  <section id="intro" style="display:none;">
+  <section id="intro" >
     <div class="intro-container">
       <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
 
@@ -150,7 +149,7 @@
     </div>
   </section><!-- End Intro Section -->
 
-  <main id="main" style="display:none;">
+  <main id="main" >
 
     <!-- ======= Featured Services Section Section ======= -->
     <section id="featured-services">
@@ -387,7 +386,21 @@ We want to develop an environment where every one of us can thrive and meet all 
               </div>
             </div>
           </div>
-
+          <div class="col-lg-3 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <img src="assets/img/yadav.jpeg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>CA SR Yadav</h4>
+                  <span>Professional Advisor</span>
+                  <div class="social">
+                    <a href="https://www.facebook.com/aayush.yadav.58760" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://twitter.com/CASRYADAV1" target="_blank"><i class="fa fa-twitter"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="col-lg-3 col-md-6">
             <div class="member" data-aos="fade-up" data-aos-delay="300">
               <img src="assets/img/shreettam.jpeg" class="img-fluid" alt="">
@@ -426,7 +439,7 @@ We want to develop an environment where every one of us can thrive and meet all 
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer" style="display:none;">
+  <footer id="footer" >
     <div class="footer-top">
       <div class="container">
         <div class="row">
@@ -507,22 +520,7 @@ We want to develop an environment where every one of us can thrive and meet all 
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script >
-    var myVar;
-
-    function myFunction() {
-      myVar = setTimeout(showPage, 500);
-    }
-
-    function showPage() {
-      document.getElementById("loader").style.display = "none";
-      document.getElementById("header").style.display = "block";
-      document.getElementById("intro").style.display = "block";
-      document.getElementById("main").style.display = "block";
-      document.getElementById("footer").style.display = "block";
-
-    }
-  </script>
+ 
 
 </body>
 

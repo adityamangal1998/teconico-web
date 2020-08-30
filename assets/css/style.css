@@ -123,7 +123,6 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 997;
   padding: 26px 0;
   background: rgba(0, 0, 0, 0.9);
-  display:none;
 }
 
 #header.header-transparent {
@@ -1377,10 +1376,7 @@ section {
   text-transform: uppercase;
   color: #999;
 }
-#main
-{
-  display:none;
-}
+
 #contact .contact-info a {
   color: #000;
 }
@@ -1511,7 +1507,6 @@ section {
   padding: 0 0 30px 0;
   color: #eee;
   font-size: 14px;
-  display:none;
 }
 
 #footer .footer-top {
