@@ -77,9 +77,9 @@ h1, h2, h3, h4, h5, h6 {
   margin: -75px 0 0 -75px;
   border: 16px solid white;
   border-radius: 50%;
-  border-top: 16px solid black;
+  border-top: 16px solid #82ae46;
   border-right: 16px solid white;
-  border-bottom: 16px solid red;
+  border-bottom: 16px solid #82ae46;
   width: 120px;
   height: 120px;
   -webkit-animation: spin 2s linear infinite;
