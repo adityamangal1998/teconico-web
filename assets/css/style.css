@@ -143,7 +143,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   letter-spacing: 3px;
   padding-left: 10px;
-  border-left: 4px solid red;
+  border-left: 4px solid #c1272d;
 }
 
 #header .logo a {
@@ -192,7 +192,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  color: red;
+  color: #c1272d;
 }
 
 .nav-menu .drop-down ul {
@@ -228,7 +228,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
-  color: #18d26e;
+  color: #c1272d;
 }
 
 .nav-menu .drop-down > a:after {
@@ -558,7 +558,7 @@ section {
   display: block;
   width: 40px;
   height: 3px;
-  background: #18d26e;
+  background: #c1272d;
   bottom: 0;
   left: calc(50% - 20px);
 }
@@ -801,7 +801,7 @@ section {
 }
 
 #services .box:hover .title a {
-  color: #18d26e;
+  color: #c1272d;
 }
 
 #services .description {
@@ -1102,7 +1102,7 @@ section {
 }
 
 .portfolio-details .portfolio-details-carousel .owl-dot.active {
-  background-color: #18d26e !important;
+  background-color:black !important;
 }
 
 .portfolio-details .portfolio-info {
